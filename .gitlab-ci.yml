@@ -1,0 +1,6 @@
+unit-tests-runner:
+  before_script:
+    - php composer.phar install --no-progress
+  script:
+    - ./vendor/bin/phpunit -c ./phpunit.xml
+
